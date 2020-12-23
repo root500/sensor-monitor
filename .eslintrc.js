@@ -17,18 +17,10 @@ module.exports = {
     project: 'tsconfig.json',
     sourceType: 'module',
   },
-  plugins: ['eslint-plugin-import-helpers'],
   rules: {
     'comma-dangle': 'off',
     'global-require': 'off',
     'no-console': 'off',
-    'import-helpers/order-imports': [
-      'error',
-      {
-        groups: ['/^react/', 'module', ['parent', 'sibling', 'index']],
-        newlinesBetween: 'always',
-      },
-    ],
     'no-multiple-empty-lines': [
       'error',
       {
